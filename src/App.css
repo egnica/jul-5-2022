@@ -3,11 +3,25 @@
   padding-top: 20px;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: lightblue;
+  margin: 10%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas:"a b c";
+  border-radius:15px
 }
-
+.col-a{
+  grid-area: a;
+  
+}
+.col-b{
+  grid-area: b;
+}
+.col-c{
+  grid-area: c;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
